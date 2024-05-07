@@ -216,3 +216,77 @@
   }
   
   /* banner section ends here  */
+
+  /* course explore starts here  */
+
+.section-center h1 {
+  color: #4BD8FF;
+  font-size: 25px;
+  font-family: "Times New Roman";
+}
+
+.section-center h2 {
+  color: #4BD8FF;
+  font-size: 45px;
+  font-family: "Times New Roman";
+}
+
+
+
+#blog-about {
+  background-color: #001920;
+  border-bottom: 1.5px solid #4BD8FF;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  flex: 1;
+  border-radius: 0.6rem;
+  background: linear-gradient(to top, #0f3d4b8c 50%, #0f3d4b8c 50%);
+  border: #4BD8FF solid 0.5px;
+  box-shadow: 20px 10px 15px 4px;
+  padding: 3rem 1rem;
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+  border-radius: 20px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon-1 {
+  height: 120px;
+  width: 90px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.card-header {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #4BD8FF;
+
+  font-family: "Times New Roman";
+  text-align: center;
+}
+
+.card-description {
+  padding: 0.5rem 0;
+  color: #fff;
+  text-align: justify;
+  font-size: 1.6rem;
+  font-family: "Times New Roman";
+  margin-bottom: 1rem;
+}
+
+/* course explore ends here  */
