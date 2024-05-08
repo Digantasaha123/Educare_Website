@@ -1,0 +1,24 @@
+*{
+    margin :0;
+    padding : 0;
+    box-sizing: border-box ;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    background-color: rgb(244, 244, 144);
+    font-size: 62%;
+    scroll-behavior: smooth;
+    max-width: auto; 
+    max-height: auto;
+}
+
+body {
+    background-color: #fff;
+    max-width: auto;
+    max-height: auto;
+    margin: auto;
+ 
+  }
