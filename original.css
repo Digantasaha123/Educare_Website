@@ -508,6 +508,7 @@ footer {
   color: #4BD8FF;
   font-size: 4rem;
   font-family: "Times New Roman";
+  margin-left: 30px;
 }
 
 
@@ -532,7 +533,7 @@ footer {
 
 .footer-menu li {
   margin-top: 15px;
-  margin-left: 6px;
+  margin-left: 12px;
 }
 
 .right {
@@ -543,6 +544,7 @@ footer {
 .right h2 {
   color: #4BD8FF;
   text-align: center;
+ 
 
 }
 
