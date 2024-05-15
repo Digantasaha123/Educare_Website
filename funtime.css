@@ -176,7 +176,125 @@ html{
   .section-center {
     padding: 5rem 1rem;
     min-height: 95vh;
+    display: flex;/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Document structure */
+html {
+    background-color: #fafafa;
+    font-size: 62.5%; /* Use percentage for responsive font sizing */
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
+
+/* Typography */
+.text-justify {
+    text-align: justify;
+}
+
+.text-white {
+    color: #fff;
+}
+
+/* Section styles */
+.section-heading {
+    font-size: 8rem;
+    text-align: center;
+}
+
+.section-center {
+    padding: 5rem 1rem;
+    min-height: 95vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Menu styles */
+.container-menu {
+    background: #001920;
+    padding: 15px 9px;
+    padding-bottom: 100px;
+    border-bottom: 1.5px solid #4BD8FF;
+}
+
+.section-heading-menu {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #4BD8FF;
+    font-size: 45px;
+    font-family: "Times New Roman";
+}
+
+/* Grid layout for menu items */
+.box-container-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    align-items: center;
+    margin: 10px;
+}
+
+/* Menu item styles */
+.box-menu {
+    box-shadow: 15px 15px 15px 4px;
+    border: #4BD8FF solid 0.5px;
+    border-radius: 30px 0px 30px 0px;
+    background: linear-gradient(to top, #0f3d4b8c 50%, #0f3d4b8c 50%);
+    text-align: center;
+    margin: 2rem;
+    padding: 30px 20px;
+    transition: transform 0.3s;
+}
+
+.box-menu:hover {
+    transform: scale(1.1);
+}
+
+.box-menu img {
+    height: 200px;
+    width: 200px;
+}
+
+.box-menu h3 {
+    color: #4BD8FF;
+    font-size: 3rem;
+    padding: 10px 0;
+}
+
+/* Button styles */
+.box-menu .btn-menu {
+    margin-top: 15px;
+    background: #001920;
+    color: #fafafa;
+    font-size: 17px;
+    border: #4BD8FF solid 0.1px;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border-radius: 30px 0px 30px 0px;
+    text-align: center;
+}
+
+.box-menu .btn-menu:hover {
+    background-color: #4BD8FF;
+
+}
+
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
