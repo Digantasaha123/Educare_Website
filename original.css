@@ -551,3 +551,56 @@ footer {
 
 
 /*footer ends here*/
+
+/* media query */
+
+@media screen and (max-width: 570px) {
+    
+  #blog-banner-section{
+      display: flex;
+      flex-direction: column-reverse;
+      min-height: 60vh;
+  }
+
+
+  .banner-img {
+      width: 35rem;
+      height: 35rem;
+  }
+
+  .card-container{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .box-container-menu{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .footer-class{
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      text-align: center;
+      margin: 0 auto;
+      gap: 30px;
+      padding-right: 50px;
+  }
+
+  #contact-form {
+      padding: 1rem;
+      border: #4BD8FF solid 0.2px;
+      border-radius: 0 30px;
+      box-shadow: black 20px 20px 15px 4px;
+      min-height: 30vh;
+      margin: 0 auto;
+      width: 80%;
+      color: #4BD8FF;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s;
+  }
+
+
+}
