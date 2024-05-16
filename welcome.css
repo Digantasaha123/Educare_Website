@@ -34,9 +34,11 @@ body {
     height: 100px;
     position: absolute;
     left: 1010px;
-    margin-top: 25px;
+    margin-top: px;
 }
 
+
+/*
 .btn {
     width: 100px;
     height: 40px;
@@ -62,6 +64,8 @@ body {
 .srch:focus {
     outline: none;
 }
+
+*/
 
 .content {
     width: 1200px;
