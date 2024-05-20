@@ -50,3 +50,25 @@ body {
 .btn:hover {
     background: #4bd8ff;
 }
+
+
+/* For mobile devices */
+
+@media (max-width: 768px) {
+    .quiz {
+        margin: 20px auto;
+        padding: 15px;
+        width: 90%;
+    }
+    .question {
+        font-size: 18px;
+    }
+    .options {
+        font-size: 15px;
+    }
+    .btn {
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+}
