@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link href="profile.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+
+
+
+        <div class="card-header">
+            <h2 class="text-center1">User Profile</h2>
+        </div>
+
+        <div class="mb-3">
+            <label for="username" class="form-label">Username:</label>
+            <input type="text" id="username" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label for="mobile" class="form-label">Mobile:</label>
+            <input type="text" id="mobile" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="dob" class="form-label">Date of Birth:</label>
+            <input type="text" id="dob" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label for="bio" class="form-label">Bio:</label>
+            <textarea id="bio" class="form-control" rows="4"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" id="password" name="password" class="form-control" required />
+        </div>
+        <div class="text-center">
+            <button type="button" id="update" class="btn btn-primary">
+                Update Profile
+            </button>
+            <button type="button" id="delete" class="btn btn-danger">
+                Delete Profile
+            </button>
+        </div>
+
+
+
+
+    </div>
+
+    <script>
+        username_ls = localStorage.getItem("username");
+        email_ls = localStorage.getItem("email");
+        mobile_ls = localStorage.getItem("mobile")
+        dob_ls = localStorage.getItem("dob");
+        bio_ls = localStorage.getItem("bio");
+        password_ls = localStorage.getItem("password");
+
+        username = document.getElementById("username");
+        email = document.getElementById("email");
+        mobile = document.getElementById('mobile').
+        dob = document.getElementById("dob");
+        bio = document.getElementById("bio");
+        password = document.getElementById("password");
+
+        username.value = username_ls;
+        email.value = email_ls;
+        mobile.value = mobile_ls;
+        dob.value = dob_ls;
+        bio.value = bio_ls;
+        password.value = password_ls;
+
+        document.getElementById("update").addEventListener("click", function () {
+            username = document.getElementById("username").value;
+            email = document.getElementById("email").value;
+            mobile = document.getElementById('mobile').value
+            dob = document.getElementById("dob").value;
+            bio = document.getElementById("bio").value;
+            password = document.getElementById("password").value;
+
+            localStorage.setItem("username", username);
+            localStorage.setItem("email", email);
+            localStorage.setItem("mobile", mobile)
+            localStorage.setItem("dob", dob);
+            localStorage.setItem("bio", bio);
+            localStorage.setItem("password", password);
+        });
+
+        document.getElementById("delete").addEventListener("click", function () {
+            localStorage.clear();
+            window.location = "./signup.html";
+        });
+    </script>
+
+
+
+</body>
+
+</html>
