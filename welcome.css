@@ -119,3 +119,56 @@ body {
     color: #fff;
     font-size: 65px;
 }
+
+
+/* For mobile devices */
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 90%;
+    }
+    .icon {
+        width: 40%;
+        height: auto;
+        float: none;
+        text-align: center;
+        margin: auto;
+    }
+    .logo {
+        float: none;
+        text-align: center;
+        padding: 10px 0;
+        margin: auto;
+        font-size: 28px;
+    }
+    .img-logo {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+        width: 80px;
+        height: 80px;
+    }
+    .btn {
+        width: 70px;
+        height: 30px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .content {
+        width: 90%;
+        margin: auto;
+    }
+    .content h1 {
+        font-size: 30px;
+        margin-top: 10%;
+    }
+    .content .par {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .content .cn {
+        width: 100px;
+        margin-left: 0;
+    }
+}
