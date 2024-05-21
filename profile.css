@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #001920;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 550px;
+    height: auto;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to top, #0f3d4b8c 50%, #0f3d4b8c 50%);
+    border: 1.5px solid #4bd8ff;
+}
+
+.card-header {
+    color: #fff;
+    background-color: #4bd8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #4bd8ff;
+    border-radius: 10px;
+    width: 160px;
+    height: 60px;
+    margin: 0 auto 20px auto;
+}
+
+.text-center1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+    padding: 0px;
+}
+
+/* Form Styles */
+.form-label {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1.5px solid #4bd8ff;
+    border-radius: 4px;
+}
+
+#username,
+#email,
+#dob,
+#bio,
+#password,
+#mobile {
+    padding: 5px;
+    margin-left: 0px;
+}
+
+.btn {
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #001920;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #4bd8ff;
+}
+
+.btn-danger {
+    background: #001920;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: rgb(199, 22, 22);
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .card-header {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 15px;
+        font-size: 1em;
+    }
+
+    .form-label {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        padding: 6px;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        margin-right: 5px;
+    }
+}
