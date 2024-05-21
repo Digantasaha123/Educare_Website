@@ -125,6 +125,53 @@ body {
 }
 
 .box-menu .btn-menu:hover {
+    font-family: -apple-system;
+    background-color: #a0a8aa;
+    color: black;
+}
 
-    background-color: #4BD8FF;
+@media only screen and (max-width: 600px) {
+  body {
+      /* Adjust the font size for smaller screens */
+      font-size: 14px;
+  }
+
+  .container-menu {
+      /* Make the container take full width */
+      width: 100%;
+      padding: 15px;
+  }
+
+  .box-container-menu {
+      /* Adjust the grid layout for smaller screens */
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .box-menu {
+      /* Adjust the box size for smaller screens */
+      margin: 1rem;
+      padding: 15px 10px;
+  }
+
+  .box-menu img {
+    
+      height: 150px;
+      width: 150px;
+  }
+
+  .section-heading-menu {
+     
+      font-size: 35px;
+  }
+
+  .section-heading-menu1 {
+    
+      font-size: 20px;
+  }
+
+  .box-menu .btn-menu {
+      
+      padding: 8px 10px;
+      font-size: 15px;
+  }
 }
