@@ -132,23 +132,22 @@ body {
 
 @media only screen and (max-width: 600px) {
   body {
-      /* Adjust the font size for smaller screens */
       font-size: 14px;
   }
 
   .container-menu {
-      /* Make the container take full width */
+      
       width: 100%;
       padding: 15px;
   }
 
   .box-container-menu {
-      /* Adjust the grid layout for smaller screens */
+      
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
   .box-menu {
-      /* Adjust the box size for smaller screens */
+      
       margin: 1rem;
       padding: 15px 10px;
   }
